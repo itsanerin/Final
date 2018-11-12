@@ -5,12 +5,12 @@
 
 @font-face{
 	font-family: 'Antro';
-	src: url('Content/fonts/Antro_Vectra.ttf');
+	src: url('./content/fonts/Antro_Vectra.ttf');
 }
 
 @font-face{
 	font-family: 'Playfair';
-	src: url('Content/fonts/PlayfairDisplay-BlackItalic.ttf');
+	src: url('./content/fonts/PlayfairDisplay-BlackItalic.ttf');
 }
 
 body{
