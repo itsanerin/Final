@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" />
+
+<title> Final </title>
+
+
+<style type="text/css">
+	
+.track1, .track2, .track3, .track4{
+	padding-top: 40px;
+
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 750px){
+	article{
+		margin: 0 auto;
+        margin-bottom: 30px;
+        width: 700px;
+  		display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        grid-template-areas: 
+            "track1 track4"
+            "track2 track3";
+        	}
+}
+
+@media only screen and (min-width: 900px){
+    article{
+        width: 800px;
+        grid-template-rows: 400px 400px;
+    }
+    img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    article{
+        width: 900px;
+        grid-template-rows: 450px 450px;
+    }
+    img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    article{
+        width: 1000px;
+        grid-template-rows: 500px 500px;
+    }
+    img{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    article{
+        width: 1100px;
+        grid-template-rows: 550px 550px;
+    }
+    img{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+<ul>
+<li> <a href="index.html"> Home </a> </li>
+<li> <a href="about.html"> About </a> </li>
+<li> <a href="music.html"> Music </a> </li>
+<!-- <li> <a href="performances.html"> Performances </a> </li> -->
+</ul>
+</nav>
+
+<article>
+<div class="track1"> <a href="track1.html"> <img src="Content/images/dreamcatcher.jpg" width="300px" height="300px"> </a> </div>
+<div class="track4"> <a href="track4.html"> <img src="Content/images/needed.jpg" width="300px" height="300px"> </a> </div>
+<div class="track2"> <a href="track2.html"> <img src="Content/images/youare.jpg" width="300px" height="300px"> </a> </div>
+<div class="track3"> <a href="track3.html"> <img src="Content/images/smitten.jpg" width="300px" height="300px"> </a> </div>
+</article>
+
+</body>
+</html>
