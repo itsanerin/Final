@@ -63,19 +63,19 @@ p, br, footer, aside {
 
 @media only screen and (max-width: 1450px){
 	nav a{
-		font-size: 30px;
-		padding: 15px;
+		font-size: 40px;
+		padding: 20px;
 	}
 }
 
 @media only screen and (max-width: 1200px){
 	nav a{
-		font-size: 25px;
-		padding: 10px;
+		font-size: 30px;
+		padding: 20px;
 	}
 }
 @media only screen and (max-width: 400px){
 	nav a{
-		font-size: 18px;
-		padding: 5px;
+		font-size: 25px;
+		padding: 10px;
 	}
