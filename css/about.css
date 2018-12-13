@@ -1,184 +1,140 @@
-@media only screen and (min-width: 1100px){
-	section{
-		display: grid;
-        grid-template-columns: 300px 350px 300px;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-            "header aside article"
-            "footer footer footer";
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 20px;
-	}
-	aside{
-		padding-left: 60px;
-	}
-	article{
-		padding-left: 60px;
-		padding-top: 100px;
-	}
-	header{
-		padding-top: 100px;
-	}
-	img{
-		width: 300px;
-		height: 300px;
-	}
-	footer{
-		font-size: 25px;
-		padding-top: 70px;
-	}
-	.fa{
-		font-size: 35px;
-	}
+body, p,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'PlayfairSC', serif;
+}
+
+/* "Introducing:" */
+h3{
+    margin-top: 40%;  
+    width: 50%;
+    margin: 0 auto;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'PlayfairSC', serif;
+}
+
+/*Footer: "Can't Get Enough?"*/
+h4{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'PlayfairSC', serif;   
+}
+
+/* "Jerimiah Black" */
+.line-1{
+    position: relative;
+    margin-top: 70%;  
+    width: 50%;
+    margin: 0 auto;
+    font-size: 6rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    font-family: 'PlayfairSC', serif;
+}
+
+/* Typewriter Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 1000ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 50%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/*Background Images parallax scroll*/
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
-@media only screen and (min-width: 1300px){
-	img{
-		width: 350px;
-		height: 350px;
-	}
-	section{
-        grid-template-columns: 350px 400px 350px;
-	}
-	article, header{
-		padding-top: 60px;
-	}
-	footer{
-		padding-top: 70px;
-	}
+.bgimg-1 {
+    background-image: url("../content/images/guitar1.jpg");
+    min-height: 100%;
 }
 
-@media only screen and (min-width: 1450px){
-	img{
-		width: 400px;
-		height: 400px;
-	}
-	section{
-        grid-template-columns: 400px 450px 400px;
-	}
-	article, header{
-		padding-top: 0px;
-	}
-	footer{
-		padding-top: 130px;
-	}
+.bgimg-2 {
+    background-image: url("../content/images/piano.jpg");
+    min-height: 400px;
 }
 
-@media only screen and (min-width: 1600px){
-	img{
-		width: 400px;
-		height: 400px;
-		}
-	section{
-        grid-template-columns: 500px 500px 500px;
-	}
-	aside{
-		padding-left: 120px;
-	}
+.bgimg-3 {
+    background-image: url("../content/images/compose.jpg");
+    min-height: 400px;
 }
 
-@media only screen and (min-width: 1800px){
-	img{
-		width: 500px;
-		height: 500px;
-	}
-	section{
-        grid-template-columns: 500px 550px 500px;
-	}
+.bgimg-4 {
+    background-image: url("../content/images/sing.jpg");
+    min-height: 95%;
 }
 
-@media only screen and (min-width: 1950px){
-	img{
-		width: 550px;
-		height: 550px;
-	}
-	section{
-        grid-template-columns: 550px 600px 550px;
-	}
-	aside p{
-		font-size: 25px;
-	}
-
+.caption {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+  /*  color: #000; */
 }
-@media only screen and (min-width: 2100px){
-	img{
-		width: 600px;
-		height: 600px;
-	}
-	section{
-        grid-template-columns: 600px 650px 600px;
-	}
-	aside p{
-		font-size: 28px;
-	}
-	footer p{
-		font-size: 30px;
-	}
-	.fa{
-		font-size: 40px;
-	}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+        background-attachment: scroll;
+    }
 }
 
 
-@media only screen and (max-width: 1100px){
-	aside, article, header{
-		padding-top: 20px;
-	}
-	section{
-		margin: 0 auto;
-		width: 90%;
-	}
-	footer{
-		font-size: 22px;
-		padding-top: 50px;
-	}
+/*Social Media Logos & text styles*/
+
+a {
+    color: #d4bca0;
 }
 
-@media only screen and (max-width: 648px){
-	img{
-		width: 300px;
-		height: 300px;
-	}
-	body{
-		font-size: 15px;
-	}
+a:hover{
+    color: white;
 }
-	
 
-	aside{
-		grid-area: aside;
-		font-size: 20px;
-		text-align: left;
-		text-indent: 30px;
-	}
-	article{
-		grid-area: article;
-	}
-	header{
-		grid-area: header;
-	}
-	footer{
-		grid-area: footer;
-		margin-bottom: 30px;
-	}
+p{
+    text-transform: none;
+}
 
-	p, br{
-		padding: 10px;
-	}
-	footer a{
-		text-decoration: none;
-	}
-	.fa {
-  		padding: 10px;
-	}
-	.fa-facebook {
-		color: #007bb5;
-	}
-	.fa-instagram {
-		color: white;
-	}
-	.fa-soundcloud {
-		color: #ff5500;
-	}
+p a.fa.fa-facebook-official{
+    color: 	#3b5998;
+}
+p a.fa.fa-instagram{
+    color: #fb3958;
+}
+p a.fa.fa-soundcloud{
+    color: #ff7700;
+}
+
+a.fa {
+    width: 30px;
+}
+
+p a.fa:hover {
+    color: white;
+    text-decoration: none;
+}

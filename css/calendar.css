@@ -1,0 +1,8 @@
+p,
+br {
+    padding: 10px;
+}
+
+div.row.align-items-center {
+    padding-bottom: 15px; !important
+} 

@@ -3,37 +3,68 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.js"></script>
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/music.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title> Final </title>
 
-
-    <style type="text/css">
-
-
-
-    </style>
-
 </head>
-
 <body>
 
-    <nav>
-        <ul>
-            <li> <a href="index.html"> Home </a> </li>
-            <li> <a href="about.html"> About </a> </li>
-            <li> <a href="music.html"> Music </a> </li>
-            <!-- <li> <a href="performances.html"> Performances </a> </li> -->
-        </ul>
+<!--    Navigation Bar-->
+    
+    <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="music.html" style="color: #d4bca0">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">Calendar</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand fa fa-facebook-official fa-3x" style="width:73px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand fa fa-instagram fa-3x" style="width:73px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand fa fa-soundcloud fa-3x" style="width:90px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <article>
-        <div class="track1"> <a href="track1.html"> <img src="./content/images/dreamcatcher.jpg" width="300px" height="300px"> </a> </div>
-        <div class="track4"> <a href="track4.html"> <img src="./content/images/needed.jpg" width="300px" height="300px"> </a> </div>
-        <div class="track2"> <a href="track2.html"> <img src="./content/images/youare.jpg" width="300px" height="300px"> </a> </div>
-        <div class="track3"> <a href="track3.html"> <img src="./content/images/smitten.jpg" width="300px" height="300px"> </a> </div>
-    </article>
-
+<!--    Soundcloud Embed & Info-->
+    
+    <div class="container">
+        <p> Listen Below:</p>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/307493191&color=%234e453f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" style="padding-top: 15px;"></iframe>
+        <p style="padding-top: 20px;"> Like what you hear? <br> Book Jerimiah Black now! <br> Email: jblakmusicnyc@gmail.com</p>
+    </div>
 </body>
 </html>

@@ -1,81 +1,110 @@
-*, html, body {
-	margin: 0;
-	padding: 0;
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
-@font-face{
-	font-family: 'Antro';
-	src: url('../content/fonts/Antro_Vectra.ttf');
+@font-face {
+    font-family: 'Antro';
+    src: url('../content/fonts/Antro_Vectra.ttf');
 }
 
-@font-face{
-	font-family: 'Playfair';
-	src: url('../content/fonts/PlayfairDisplay-BlackItalic.ttf');
+@font-face {
+    font-family: 'Playfair';
+    src: url('../content/fonts/PlayfairDisplay-BlackItalic.ttf');
 }
 
-body{
-	background-color: black;
-	color: white;
-	text-align: center;
+@font-face {
+    font-family: 'PlayfairSC';
+    src: url('../content/fonts/PlayfairDisplaySC-Regular.ttf');
 }
 
-nav {
-	position: -webkit- sticky;
-	position: sticky;
-	top: 0;
-	text-align: left;
-    background-color: rgba(0, 0, 0, 0.8);
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav.navbar {
+    position: -webkit- sticky;
+    position: sticky;
+    top: 0;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    padding: 0px;
+    z-index: 5;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 nav ul {
-	list-style: none;
+    list-style: none;
+    margin: 0px;
 }
 
 nav li {
-	display: inline;
+    display: inline;
 }
 
-nav a{
-	display: inline-block;
-	padding: 20px;
-	color: white;
-	text-decoration: none;
-	font-family: Playfair, cursive;
-	font-size: 40px;
+nav a,
+.nav-link a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: Playfair, cursive;
+    font-size: 35px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border:.5px solid transparent;
 }
 
-nav a:hover{
-	/* text-decoration: underline;
-	color: #d4bca0; */
+nav a:hover {
     font-style: normal;
     background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-decoration: none;
+    border-left:.5px solid gray;
+    border-right:.5px solid gray;
 }
 
-p, br, footer, aside {
-	font-family: 'Quattrocento', serif;
+.navbar-brand{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
 }
 
-@media only screen and (max-width: 1090px){
-	nav {
-		text-align: center;
-	}
+p, br {
+    font-family: 'Quattrocento', serif;
 }
 
-@media only screen and (max-width: 1450px){
-	nav a{
-		font-size: 40px;
-		padding: 20px;
-	}
+@media only screen and (max-width: 1090px) {
+    nav {
+        text-align: center;
+    }
+    .navbar-brand{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 }
 
-@media only screen and (max-width: 1200px){
-	nav a{
-		font-size: 30px;
-		padding: 20px;
-	}
+
+@media only screen and (max-width: 1200px) {
+    nav a {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .navbar-brand{
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
-@media only screen and (max-width: 400px){
-	nav a{
-		font-size: 25px;
-		padding: 10px;
-	}
+}
+
+@media only screen and (max-width: 400px) {
+    nav a {
+        font-size: 25px;
+        padding: 10px;
+    }
